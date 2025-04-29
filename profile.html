@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="Gallery Logo" class="logo">
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a href="profile.html">Profile</a>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+    </div>
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <img src="https://avatars.mds.yandex.net/i?id=fda0630a4b5ae4eea49a5bc0a10663b6a8a0808e-5332102-images-thumbs&n=13" alt="Profile Picture" class="profile-pic">
+            <h3>Давид</h3>
+            <p>Почта: abracadabra@gmail.com</p>
+            <p>Участник с: Февраль 2024</p>
+        </div>
+        <div class="user-uploads">
+            <h3>Загрузки</h3>
+            <div class="gallery">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=679720f2a94327342bb6a0e160ce7bb8_l-8497208-images-thumbs&n=13" alt="User Upload">
+                    <p>Kitten</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/74/5b/69/745b69c8205373684c9bc72a42bdde6d.jpg" alt="User Upload">
+                    <p>Road</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-form">
+        <h3>Оставьте свой комментарий</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="email" id="email" placeholder="Адрес электронной почты" required>
+            <textarea id="message" placeholder="Комментарий" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="formStatus"></p>
+    </div>
+
+    <div id="filler"></div>
+    <footer class="footer">
+        <p>Сделано Шишкоедовым Давидом | Телефон &#9742 +8777-777-777</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
